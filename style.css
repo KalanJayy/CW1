@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/*body*/
+body{
+    font-family: Arial , sans-serif;
+}
+
+header{
+    padding: 0;
+}
+
+
+.wrapper{
+    background-color: #333333;
+    margin: 0;
+    padding: 20px;
+}
+
+
+/*Primary-btn*/
+.btn{
+    background-color: #4BA145;
+    color: white;
+    border: 2px solid #388E3C;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #333333;
+}
+
+
+/*Secondary-btn*/
+.btn2{
+    background-color: #FFC107;
+    color: #333333;
+    border: 2px solid #ffd900;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+} 
+
+
+
+/*footer*/
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0e0d0d;
+    color: white;
+}
+
+footer a {
+    color: #4BA145;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.navbar{
+    /* background: #4BA145; */
+    width:fit-content;
+    position:relative;
+    display: flex;
+    justify-content: space-around;
+    height:40px;
+    line-height:40px;
+    z-index: 1000;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    margin: auto;
+}
+
+.nav-menu{
+    display: flex;
+    position: relative;
+    list-style: none;
+}
+
+.nav-menu .nav-item a{
+    height: 100%;
+    display: block;
+    color:rgb(255, 255, 255);
+    padding: 0 30px;
+    text-decoration:none;
+    font-size: 1em;
+    font-weight:bolder;
+}
+
+.nav-menu .nav-item:hover a{
+    color: azure;
+    background: rgb(106, 172, 8);
+    border-radius:10px;/*Rounded hover effect */
+    transform: scale(0.9); /* Slightly enlarges when hovered */
+}
+
+.nav-menu .nav-item a::after{
+    background: #388E3C;
+}
+
+
+.nav-menu .nav-item a i.uil-angle-down{
+    rotate: 0deg;
+    display:inline-block;
+    transition: 0.3s ease ;
+} 
+
+.nav-menu .nav-item:hover a i.uil-angle-down{
+    rotate:180deg;
+}
+
+
+/*to always active home*/
+.nav-menu .nav-item:first-child a {
+    color: azure; 
+    background: rgb(106, 172, 8);
+    border-radius:10px;
+    transform: scale(0.9);  
+}
+
+.nav-menu .nav-item:first-child a i {
+    margin-right: 5px; 
+    
+}
+
+.nav-menu .nav-item ul{
+    position: absolute;
+    list-style: none;
+    display: block;
+    padding-top: 0px;
+    height: 0;
+    overflow:hidden;
+    transition: 0.3s ease-in;
+}
+
+.nav-menu .nav-item:hover ul{
+    height: calc(400% + 10px);
+    width: max-content;
+    
+
+}
+
+.nav-menu .nav-item ul li a{
+    display: none;
+}
+
+.nav-menu .nav-item:hover ul li a{
+    display: block;
+    background: rgba(106, 172, 8,0.3);
+    color:black;
+}
+
+.nav-menu .nav-item:hover ul li:hover a{
+    color:white;
+}
+
+    
+
+.footer{
+    display: flex;
+    padding: 40px;
+    background-color: #0f0f0f;
+}
+
+.footer-image img{
+    width: 300px;
+}
+
+.text{
+    display: flex;
+    gap: 300px;
+}
+
+.pages{
+    margin-left: 80px;
+}

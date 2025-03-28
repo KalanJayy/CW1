@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+}
+.container {
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(1, 1, 1, 0.5);
+    text-align: center;
+    align-items: center;
+}
+
+h1 {
+    color: #00ff0dbb;
+}
+
+svg {
+    fill: #388E3C;
+
+}
+.hover-effect:hover {
+    fill: #02fd0f; 
+    cursor: pointer;
+}
+line {
+    stroke: white;
+    stroke-width: 2;
+}
+footer {
+    margin:auto;
+    color: white;
+    padding: auto;
+}

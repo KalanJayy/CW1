@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - provide your student name</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pageEditor_validator.css"> <!-- External CSS link -->
+    <link rel="stylesheet"  href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header id="top">
+        <div class="navbar">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="Homepage.html"><i class="fa fa-home"></i>Home</a></li>
+                <li class="nav-item"><a href="volunteer.html">Volunteer</a></li>
+                <li class="nav-item"><a href="Table.html">Table</a></li>
+                <li class="nav-item"><a href="Userprofile.html">User profile</a></li>
+                <li class="nav-item"><a href="feedback.html">Feedback</a></li>
+                <li class="nav-item"><a href="sitemap.html">Sitemap</a></li>
+                <li class="nav-item"><a href="Team.html">Team</a></li>
+                <li class="nav-item"><a href="#">Page Editor<i class="uil uil-angle-down"></i></a>
+                        <ul>
+                            <li><a href="pageEditor_ST1.html">Student 1</a></li>
+                            <li><a href="pageEditor_ST2.html">Student 2</a></li>
+                            <li><a href="pageEditor_ST3.html">Student 3</a></li>
+                            <li><a href="pageEditor_ST4.html">Student 4</a></li>
+                        </ul>
+                    
+                </li>
+                <li class="nav-item"><a href="#">Content Page<i class="uil uil-angle-down"></i></a>
+                    
+                        <ul>
+                            <li><a href="content_st1.html">Student 1</a></li>
+                            <li><a href="content_st2.html">Student 2</a></li>
+                            <li><a href="content_st3.html">Student 3</a></li>
+                            <li><a href="content_st4.html">Student 4</a></li>
+                        </ul>
+                    
+                </li>
+                <li class="nav-item"><a href="#">Validation Page<i class="uil uil-angle-down"></i></a>
+                    
+                        <ul>
+                            <li><a href="validation_ST1.html">Student 1</a></li>
+                            <li><a href="validation_ST2.html">Student 2</a></li>
+                            <li><a href="validation_ST3.html">Student 3</a></li>
+                            <li><a href="validation_ST4.html">Student 4</a></li>
+                        </ul>
+                    
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="stud">
+        <h2>Imashi Waraketiya (Student 3)</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">Feedback Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            This webpage consists of an HTML form designed for collecting feedback from users visiting a website. The form includes several sections that collect personal details, feedback on user experience, and additional requests, along with some optional interactive elements. <br><br>
+                            1. HTML Structure: <br>
+                            •	The page uses the html tag to define the document's structure, and it specifies that the document is in English (html lang="en"). <br>
+                            •	The head section includes metadata for character encoding (UTF-8), viewport settings for responsiveness, a link to an external CSS file (style.css), and an internal style block for additional CSS rules.  <br>
+                            •	The body section contains the content visible to users, including the feedback form.
+                            <br><br>
+                            o	Personal Details Section: <br>
+                            	Name: A text input field for the user to provide their name. <br>
+                            	Email: An email input field to collect the user's email address. <br>
+                            	Telephone Number: A telephone input field to collect the user's phone number. <br>
+                            	Address: A textarea for the user to provide their address (optional). <br>
+                            <br><br>
+                            o	Feedback Details Section: <br>
+                            	First Visit: A pair of radio buttons that allow the user to indicate if this is their first time visiting the site. <br>
+                            	Ease of Navigation: Another pair of radio buttons to assess if the website was easy to navigate and informative. <br>
+                            	Suggestions: A textarea field where the user can suggest improvements if they answered "No" to the navigation question. <br>
+                            	Satisfaction Rating: A series of radio buttons (1 to 10) that collect the user's satisfaction level with the website and services. <br>
+                            	Recommendation: Radio buttons to ask if the user would recommend the website's services. <br>
+                            	Update Preferences: A dropdown (select) field to choose if the user would like to receive updates via email, SMS, or not at all. <br>
+                            	Additional Requests: A textarea field where the user can add any additional questions or requests.
+                            <br><br>
+                                    File Upload: <br>
+                            	An input field for uploading files, supporting common file types like .png, .jpg, .pdf, etc. <br>
+                            •	The form is wrapped within a div class="container" which ensures proper alignment and spacing of form elements. <br>
+                            •	When the user submits the form, the information is sent to a PHP file (upload.php), indicated in the file upload section's action attribute <br>
+                            •	The form includes validation for required fields, such as name, email, telephone number, and date of visit, by using the required attribute on those respective fields. <br>
+                            •	The submit button is styled to change color when hovered over, improving user interactivity.
+                            <br><br><br>
+
+                            2. CSS Styling:
+                            o	Background and Layout: The background color of the body is dark gray (#333333), while the form container has a gradient background. The form is centered in the middle of the screen, with some padding and a box shadow for a clean and modern look. <br>
+                            o	Text Styling: The headings (h2, h4) are styled in green color, making them stand out. <br>
+                            o	Form Fields: Various form elements such as inputs, selects, and textareas are styled with padding, margins, and border-radius for a smooth and user-friendly appearance. <br>
+                            o	Buttons: The submit button is styled with a green background and white text. On hover, the background color changes to a darker green. <br>
+
+                            <br>
+
+
+                        </p>
+
+                    <h3>Accessibility</h3>
+                           <p>
+                                •	The use of clear, descriptive labels (label) ensures that screen readers can effectively read the form elements. <br>
+                                •	The form also uses placeholder text in input fields and textareas to help guide the user. <br>
+                                •	The radio buttons and checkboxes are grouped using div elements with the class radio-group and styled to ensure they are easy to select. <br>
+                           </p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html">validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="feedback.html">Feedback page</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Team Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>
+                            The HTML document creates a Team Page that showcases team members with a focus on providing detailed information on hover. The page uses a combination of semantic HTML elements, CSS styling, and a responsive grid layout to ensure a clean and organized form <br> <br>
+
+                            Team Member Section: <br>
+                            •	Displays four team members in a grid layout with hover effects to reveal additional information. <br>
+                            •	Each member is represented within a container (div class="team-member") with an image and a nested info section. <br>
+                            •	The info section (div class="info") becomes visible on hover, showing the member's name, role, student ID, and skills. <br> <br>
+                            Image Handling: <br>
+                            •	Uses img tags with a defined width and height of 250px x 300px. <br>
+                            •	Images have descriptive alt attributes to improve accessibility. <br>
+                            <br> <br>
+                            CSS & Styling: <br>
+                            •	The page includes two external stylesheets <br>
+                            •	Uses class-based styling for better modularity and maintainability. <br>
+                            •	Potential hover effects are applied via CSS, possibly using the :hover pseudo-class. <br>
+                            •	Flexbox/Grid Layout: Likely used for team member alignment and responsive design. <br>
+                            •	Hover Effects: CSS transitions or transforms are used to reveal the .info section. <br>
+
+                        </p>
+                    <h3>Accessibility</h3>
+                        <p>
+
+                            •	Alt Attributes: Provided for all images to support screen readers. <br> 
+                            •	Semantic HTML: Good use of header, footer, and main tags to enhance structure. <br> <br>
+
+
+                        </p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html">Validation Page Student 3</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="Team.html">Team Page</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p> 
+                            The Content Page was structured using semantic HTML elements like section and article for better readability and organization. 
+                            Internal navigation was implemented with anchor links to enable smooth scrolling throughout the page. A fixed-position "Go-to-Top" 
+                            button was added for quick navigation. For responsive design, CSS Grid Layout was used to adjust the page layout on different screen sizes.
+                             Accessibility features include ensuring a proper heading order from h1 to h6 and providing descriptive link texts instead of generic phrases like "Click here." 
+                             The page passed validation with minor warnings due to missing alt attributes on some images
+                        </p>
+                    <h3>Accessibility</h3>
+                        <p>Alt Attributes: Provided for all images to support screen readers. <br>
+                            Semantic HTML: Good use of header, footer, and main tags to enhance structure.
+                            </p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST3.html">validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content_st3.html">Content 3</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>
+                        Image Sizing and Consistency: <br>
+                        Maintaining consistent image dimensions while ensuring images did not become stretched or distorted was a challenge, particularly with varying image aspect ratios. <br> <br>
+                        Hover Effects Using Transitions: <br>
+                        Learned how to use CSS transition properties to create smooth animations, improving the overall user experience. <br> <br>
+                        Testing on Multiple Devices: <br>
+                        Testing the page on both desktop and mobile devices highlighted layout issues early, leading to better cross-platform compatibility. <br> <br>
+                        Form Validation: <br>
+                        Implementing both client-side and server-side validation to ensure all required fields were filled out correctly.Utilized HTML required attributes and proper input types <br>
+                        <br>
+                        Handling Multi-Select and Checkboxes: <br>
+                        Displaying multi-select options and allowing users to choose multiple pages visited.Implemented multiple and size attributes on select elements and ensured all checkbox inputs had unique name values. <br>
+
+                    </p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p> The feedback form collects user opinions and suggestions, maintaining relevant and appropriate content. 
+                        Language used in labels and placeholders is professional and clear.  Label tags with for attributes improve screen reader
+                         compatibility. Semantic HTML elements (fieldset, legend, textarea) enhance accessibility.  High contrast between text and
+                          background colors improves readability. Limited file types (.png, .jpg, .jpeg, .pdf, .doc, .docx) to avoid risky uploads. </p>
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>https://www.mayoclinic.org/diseases-conditions/post-traumatic-stress-disorder/symptoms-causes/syc-20355967</li>
+                        <li>https://www.who.int/news-room/fact-sheets/detail/mental-health-strengthening-our-response</li>
+                        <li>http://mayoclinic.org</li>
+                        <li><i>https://sdgs.un.org/goals/goal3</i></li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="feedback.html">Feedback page</a> </li>
+                        <li><a href="Team.html">Team page</a></li>
+                        <li><a href="content_st3.html">Content page</a></li>
+                    </ul>
+
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        
+        <div class="footer-image">
+            <img src="logo.png" alt="">
+            <h3>Good Health and Well Being</h3>
+        </div>
+        
+
+        <div class="text">
+
+            <div class="pages">
+                <h3>Pages</h3> 
+                <a href="Homepage.html">Home Page</a> <br>
+                <a href="volunteer.html">Volunteer</a> <br>
+                <a href="Table.html">Table</a> <br>
+                <a href="Userprofile.html">User Profile</a> <br>
+                <a href="feedback.html">Feedback</a> <br>
+                <a href="sitemap.html">Sitemap</a> <br>
+                <a href="Team.html">Team</a> 
+            </div>
+
+            <div class="content-pages">
+                <h3>Content Pages</h3>
+                <a href="content_st1.html">Student 1</a> <br>
+                <a href="content_st2.html">Student 2</a> <br>
+                <a href="content_st3.html">Student 3</a> <br>
+                <a href="content_st4.html">Student 4</a>
+            </div>
+
+            <div class="editor-pages">
+                <h3>Editor Pages</h3>
+                <a href="pageEditor_ST1.html">Student 1</a> <br>
+                <a href="pageEditor_ST2.html">Student 2</a> <br>
+                <a href="pageEditor_ST3.html">Student 3</a> <br>
+                <a href="pageEditor_ST4.html">Student 4</a>
+            </div>
+
+            <div class="page-editor">
+                <h3>Page Editor: </h3>
+                <p>Imashi Waraketiya</p>
+            </div>
+
+        </div>
+
+    </footer>
+</body>
+</html>

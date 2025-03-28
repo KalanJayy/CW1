@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.content{
+    text-align: center;
+    padding: 0;
+}
+
+
+#text{
+    position:absolute;
+    font-size: 5em;
+    color: azure;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    z-index: 10;
+    transition: opacity 0.3s ease;
+    width: 100%; /* Ensure text spans full width */
+    text-align: center; /* Center the text */
+}
+
+
+.learn-more-btn {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 20; /* Ensure button is above the text but below leaf/plant */
+    top: 65%; /* Adjust this value to position the button vertically */
+}
+
+
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind other content */
+    pointer-events: none; /* Ensure it doesn't interfere with interactions */
+    overflow: hidden;
+}
+
+.video-bg {
+    width: 100%; /* Match page width */
+    height: 100%; /* Match container height */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Ensures video covers entire area */
+}
+
+
+.below-content{
+    background: linear-gradient( rgb(0, 58, 0), rgb(150, 239, 150));;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.content-page {
+    margin-top: 80px;
+    padding-bottom: 50px;
+}
+
+.sub-title{
+    font-size: 50px;
+    margin-top: 0px;
+    margin-left: 60px;
+    padding-top: 50px;
+    
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin-top: -150px; 
+    padding-top: 50px; 
+    overflow: hidden;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    font-size: 2.5em;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.8);
+    padding: 25px;
+    border-radius: 20px;
+    margin: 20px;
+    width: 400px;
+}
+
+.card img{
+    width: 350px;
+    border-radius: 25px;
+}
+
+.card:hover{
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+
+}
+
+.card-description{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+    margin: 20px;
+}
+
+.btn{
+    width: fit-content;
+}
+
+.wellness{
+    margin: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right , #3f2321,transparent),url(long-one.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    padding: 5%;
+    color:#fff;
+}
+
+.wellness h3{
+    font-size: 4vw;
+    line-height:5.3vw;
+    font-weight: 500;
+}
+
+.wellness p{
+    font-size: 18px;
+    margin:10px 0;
+}
+
+.wellness-btn{
+    background-color: rgba(84, 199, 139, 0.3);
+    color:white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+}

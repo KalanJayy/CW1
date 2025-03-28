@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: white;
+}
+
+h1{
+    color: #00ff0dbb;
+    text-align: center;
+    margin: 35px;
+}
+.container {
+    width:50%;
+    margin: auto;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    text-align: center;
+}
+.profile-header {
+    width: 80%;
+    gap: 30px;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    background-color: #0f0f0f;
+    text-align: center;
+}
+
+.profile-details{
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.user-info{
+    list-style: none;
+    padding:0;
+}
+.profile-img {
+    justify-content: center; 
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #388E3C;
+}
+.volunteering{
+    background-color: #0f0f0f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+.Goals-Frustrations-Experience{           
+    width: 80%;
+    background-color: #0f0f0f;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+.UN-Goals{
+    background-color: #0f0f0f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.profile-details h2 {
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
+}
+.skills-container {
+    width: 300px;
+    background: #0f0f0f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    
+}
+
+.skill {
+    margin-bottom: 15px;
+    text-align: left;
+
+}
+.skill-name {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.progress-bar {
+    width: 100%;
+    background-color: #ffffff;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    background-color:#27692a;
+}
+.contact-form input, .contact-form textarea {
+    width: 50%;
+    padding: 20px;
+    margin-top: 10px;
+    border: 1px solid #889e91;
+    border-radius: 5px;
+    text-align: left;
+    background-color: #333;
+}
+
+.btn{
+    margin: 15px;
+}
+
+
+h2{
+    text-align: center;
+}
+
+.contact-me{
+    
+    background-color: #0f0f0f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    width: 80%;
+    gap: 20px;
+
+
+}
+.UN-IMG img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+
+}
+.volunteering table {
+    width: 75%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border-color:#889e91;
+    
+}
+
+.volunteering table th, .volunteering table td {
+    border: 1px solid #889e91;
+    border-radius: 8px;
+    padding: 8px;
+    text-align: left;
+    background-color: #0f0f0f;
+}
+
+.volunteering table th {
+    border-radius: 8px;
+    background-color: #0f0f0f;
+    color: rgb(255, 255, 255);
+}
+
